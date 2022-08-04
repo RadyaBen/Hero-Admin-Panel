@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
-import store from '../../redux/helpers/store';
 
+import { store } from '../../redux/helpers/store';
 import { selectAll } from '../HeroesFilters/FiltersSlice';
 import { useCreateHeroMutation } from '../../api/ApiSlice';
 
@@ -24,7 +24,7 @@ const HeroesAddForm = () => {
 			name: heroName,
 			description: heroDescr,
 			element: heroElement
-		}
+		};
 
 		createHero(newHero).unwrap();
 
@@ -46,7 +46,7 @@ const HeroesAddForm = () => {
 				if (name === 'all') return;
 
 				return <option key={name} value={name}>{label}</option>
-			})
+			});
 		}
 	}
 
@@ -94,7 +94,7 @@ const HeroesAddForm = () => {
 
 			<button type="submit" className="btn btn-primary">Create</button>
 		</form>
-	)
-}
+	);
+};
 
-export default HeroesAddForm;
+export { HeroesAddForm };

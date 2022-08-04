@@ -1,4 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
+
 import filters from '../../components/HeroesFilters/FiltersSlice';
 import { apiSlice } from '../../api/ApiSlice';
 
@@ -17,4 +18,4 @@ const store = configureStore({
 	devTools: process.env.NODE_ENV !== 'production'
 });
 
-export default store;
+export { store };

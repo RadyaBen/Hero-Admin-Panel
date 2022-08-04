@@ -1,10 +1,14 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import classNames from 'classnames';
-import store from '../../redux/helpers/store';
 
-import { filtersChanged, fetchFilters, selectAll } from './FiltersSlice';
-import Spinner from '../Spinner/Spinner';
+import { store } from '../../redux/helpers/store';
+import { 
+	filtersChanged, 
+	fetchFilters, 
+	selectAll 
+} from './FiltersSlice';
+import { Spinner } from '../Spinner';
 
 const HeroesFilters = () => {
 
@@ -43,7 +47,7 @@ const HeroesFilters = () => {
 				className={btnClass}
 				onClick={() => dispatch(filtersChanged(name))}
 			>{label}</button>
-		})
+		});
 	}
 
 	const elements = renderFilters(filters);
@@ -57,7 +61,7 @@ const HeroesFilters = () => {
 				</div>
 			</div>
 		</div>
-	)
-}
+	);
+};
 
-export default HeroesFilters;
+export { HeroesFilters };

@@ -3,8 +3,8 @@ import { useSelector } from 'react-redux';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 import { useGetHeroesQuery, useDeleteHeroMutation } from '../../api/ApiSlice';
-import HeroesListItem from '../HeroesListItem/HeroesListItem';
-import Spinner from '../Spinner/Spinner';
+import { HeroesListItem } from '../HeroesListItem';
+import { Spinner } from '../Spinner';
 
 import './HeroesList.scss';
 
@@ -26,7 +26,7 @@ const HeroesList = () => {
 		if (activeFilter === 'all') {
 			return filteredHeroes;
 		} else {
-			return filteredHeroes.filter(item => item.element === activeFilter)
+			return filteredHeroes.filter(item => item.element === activeFilter);
 		}
 	}, [heroes, activeFilter]);
 
@@ -49,7 +49,7 @@ const HeroesList = () => {
 					classNames="hero">
 					<h5 className="text-center mt-5">There are no heroes yet</h5>
 				</CSSTransition>
-			)
+			);
 		}
 
 		return arr.map(({ id, ...props }) => {
@@ -60,7 +60,7 @@ const HeroesList = () => {
 					classNames="hero">
 					<HeroesListItem  {...props} onDeleteHero={() => onDeleteHero(id)} />
 				</CSSTransition>
-			)
+			);
 		});
 	}
 
@@ -69,7 +69,7 @@ const HeroesList = () => {
 		<TransitionGroup component="ul">
 			{elements}
 		</TransitionGroup>
-	)
-}
+	);
+};
 
-export default HeroesList;
+export { HeroesList };
