@@ -1,4 +1,4 @@
-import { useCallback, useMemo } from 'react';
+import { useCallback, useMemo, useRef } from 'react';
 import { useSelector } from 'react-redux';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
@@ -19,6 +19,8 @@ const HeroesList = () => {
 	const [deleteHero] = useDeleteHeroMutation();
 
 	const activeFilter = useSelector(state => state.filters.activeFilter);
+
+	const nodeRef = useRef(null);
 
 	const filteredHeroes = useMemo(() => {
 		const filteredHeroes = heroes.slice();
@@ -45,6 +47,7 @@ const HeroesList = () => {
 		if (arr.length === 0) {
 			return (
 				<CSSTransition
+					nodeRef={nodeRef}
 					timeout={0}
 					classNames="hero">
 					<h5 className="text-center mt-5">There are no heroes yet</h5>
@@ -55,6 +58,7 @@ const HeroesList = () => {
 		return arr.map(({ id, ...props }) => {
 			return (
 				<CSSTransition
+					nodeRef={nodeRef}
 					key={id}
 					timeout={500}
 					classNames="hero">
