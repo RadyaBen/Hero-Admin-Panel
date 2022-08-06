@@ -5,10 +5,10 @@
 
 <div align="center">
 
-  <a href="">![GitHub last commit](https://img.shields.io/github/last-commit/RadyaBen/Hero_Admin_Panel?style=plastic)</a>
-  <a href="">![GitHub repo size](https://img.shields.io/github/repo-size/RadyaBen/Hero_Admin_Panel?style=plastic)</a>
-  <a href="">![GitHub language count](https://img.shields.io/github/languages/count/RadyaBen/Hero_Admin_Panel?style=plastic)</a>
-  <a href="">![GitHub top language](https://img.shields.io/github/languages/top/RadyaBen/Hero_Admin_Panel?style=plastic)</a>
+  <a href="">![GitHub last commit](https://img.shields.io/github/last-commit/RadyaBen/Hero-Admin-Panel?style=plastic)</a>
+  <a href="">![GitHub repo size](https://img.shields.io/github/repo-size/RadyaBen/Hero-Admin-Panel?style=plastic)</a>
+  <a href="">![GitHub language count](https://img.shields.io/github/languages/count/RadyaBen/Hero-Admin-Panel?style=plastic)</a>
+  <a href="">![GitHub top language](https://img.shields.io/github/languages/top/RadyaBen/Hero-Admin-Panel?style=plastic)</a>
 
 </div>
 
@@ -40,10 +40,10 @@
 
 ```sh
 # Clone the repository
-$ git clone https://github.com/RadyaBen/Hero_Admin_Panel.git
+$ git clone https://github.com/RadyaBen/Hero-Admin-Panel.git
 
 # Go into the repository 
-$ cd Hero_Admin_Panel
+$ cd Hero-Admin-Panel
 
 # Install NPM packages
 $ npm install
