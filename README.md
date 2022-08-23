@@ -6,10 +6,10 @@
 <!-- PROJECT SHIELDS -->
 <div align="center">
 
-   ![GitHub last commit](https://img.shields.io/github/last-commit/RadyaBen/Hero_Admin_Panel?style=plastic)
-   ![GitHub repo size](https://img.shields.io/github/repo-size/RadyaBen/Hero_Admin_Panel?style=plastic)
-   ![GitHub language count](https://img.shields.io/github/languages/count/RadyaBen/Hero_Admin_Panel?style=plastic)
-   ![GitHub top language](https://img.shields.io/github/languages/top/RadyaBen/Hero_Admin_Panel?style=plastic)
+   ![GitHub last commit](https://img.shields.io/github/last-commit/RadyaBen/Hero-Admin-Panel?style=plastic)
+   ![GitHub repo size](https://img.shields.io/github/repo-size/RadyaBen/Hero-Admin-Panel?style=plastic)
+   ![GitHub language count](https://img.shields.io/github/languages/count/RadyaBen/Hero-Admin-Panel?style=plastic)
+   ![GitHub top language](https://img.shields.io/github/languages/top/RadyaBen/Hero-Admin-Panel?style=plastic)
 
 </div>
 
@@ -45,15 +45,15 @@ file.
 ### Installation
 
 ```sh
-# Clone the repository
+# Step 1: Clone the repository
 $ git clone https://github.com/RadyaBen/Hero-Admin-Panel.git
 
-# Go into the repository
+# Step 2: Go into the repository
 $ cd Hero-Admin-Panel
 
-# Install NPM packages
+# Step 3: Install NPM packages
 $ npm install
 
-# Run the app
+# Step 4: Run the app
 $ npm start
 ```
